@@ -10,18 +10,25 @@
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
         <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
             #canvas {
+                width: 100%;
+                height: 60vh;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 3;
             }
             #video {
-                position: absolute;
-                top: 0;
-                left: 0;
+                width: 100%;
+                height: 60vh;
             }
             img {
+                width: 100%;
+                height: 60vh;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -31,18 +38,14 @@
             }
             #message {
                 z-index: 3;
-                position: absolute;
                 font-size: 100px;
-            }
-            html {
-                height: 1000px;
             }
         </style>
     </head>
     <body>
         <canvas id="canvas" width="640" height="480"></canvas>
-        <video id="video" width="640" height="480" autoplay></video>
-        <p id="message"></p>
+        <video id="video" autoplay></video>
+        <p id="message">test</p>
         <script>
             // get access to webcam
             // Create a detector.
