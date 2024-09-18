@@ -15,20 +15,17 @@
                 padding: 0;
             }
             #canvas {
-                width: 100%;
-                height: 60vh;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 3;
             }
             #video {
-                width: 100%;
-                height: 60vh;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
             img {
-                width: 100%;
-                height: 60vh;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -44,8 +41,8 @@
     </head>
     <body>
         <canvas id="canvas" width="640" height="480"></canvas>
-        <video id="video" autoplay></video>
-        <p id="message">test</p>
+        <video id="video" width="640" height="480" autoplay></video>
+        <p id="message"></p>
         <script>
             // get access to webcam
             // Create a detector.
